@@ -1,0 +1,10 @@
+.idea
+/target
+/data
+*.log
+.classpath
+.project
+/.settings
+*.orig
+*.txt
+*.blu
