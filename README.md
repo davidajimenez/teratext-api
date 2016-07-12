@@ -15,7 +15,7 @@ For example:
 
 choose the profile after -P from:
 
-*  loc
+*  loc (this is the default)
 *  dev
 *  test
 *  prod
