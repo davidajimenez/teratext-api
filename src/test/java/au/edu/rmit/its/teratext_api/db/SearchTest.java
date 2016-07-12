@@ -24,6 +24,20 @@ public class SearchTest {
 	}
 	
 	@Test
+	public void testSearchStatusAndType(){
+		String query = "Type=StaffProfile and status=A";
+		long numberOfResults = Search.count(query);
+		assertTrue(numberOfResults > 0);
+	}
+	
+	@Test
+	public void testSearchStatusAndTypeAndVisibility(){
+		String query = "Type=StaffProfile and status=D and visibility=A";
+		long numberOfResults = Search.count(query);
+		assertTrue(numberOfResults > 0);
+	}
+	
+	@Test
 	public void testPresent(){
 		String query = "SIMID=93y5odr1yhoe1";
 		List<Record> myRecords = Search.presentRecords(query);

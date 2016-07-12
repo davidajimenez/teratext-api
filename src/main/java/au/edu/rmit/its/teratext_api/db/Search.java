@@ -78,9 +78,16 @@ public class Search {
 	 * Prints to the console the list of Records.
 	 * @param records
 	 */
-	public static void printPresentRecords(List<Record> records) {
+	public static void printPresentRecords(List<Record> records, boolean firstTenOnly) {
+		int max = 10;
 		for (Record rec : records) {
 			PrintUtils.printRecord(rec, rec.getName(), 0);
+			if (firstTenOnly) {
+				max--;
+				if (max == 0) {
+					break;
+				}
+			}
 		}
 	}
 }
