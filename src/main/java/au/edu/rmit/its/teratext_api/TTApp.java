@@ -59,7 +59,13 @@ public class TTApp {
 					controller.getCommands().get(TTAppCommands.CREATE).execute(query);
 					logger.info(Messages.getString("log.message.create.file.message", query, blufile));
 					break;
-				case 5:
+				case 2:
+					System.out.println(Messages.getString("prompt.read.choice.message"));
+					query = scanner.next();
+					controller.getCommands().get(TTAppCommands.READ).execute(query);
+					logger.info(Messages.getString("log.message.read.message", blufile));
+					break;
+				case 6:
 					System.out.println(Messages.getString("prompt.bye.choice.message"));
 					break;
 				default:

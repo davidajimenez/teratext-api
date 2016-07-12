@@ -58,6 +58,16 @@
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
 		</dependency>
+		<dependency>
+			<groupId>com.teratext</groupId>
+			<artifactId>teratext</artifactId>
+			<version>5.3.3</version>
+		</dependency>
+		<dependency>
+			<groupId>com.teratext</groupId>
+			<artifactId>teratext-asn</artifactId>
+			<version>5.3.3</version>
+		</dependency>
 	</dependencies>
 	
 	<build>
