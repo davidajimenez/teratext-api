@@ -60,10 +60,11 @@ public class TTApp {
 					logger.info(Messages.getString("log.message.create.file.message", query, blufile));
 					break;
 				case 2:
+					scanner.nextLine();
 					System.out.println(Messages.getString("prompt.read.choice.message"));
-					query = scanner.next();
+					query = scanner.nextLine();
 					controller.getCommands().get(TTAppCommands.READ).execute(query);
-					logger.info(Messages.getString("log.message.read.message", blufile));
+					logger.info(Messages.getString("log.message.read.message", query));
 					break;
 				case 6:
 					System.out.println(Messages.getString("prompt.bye.choice.message"));
